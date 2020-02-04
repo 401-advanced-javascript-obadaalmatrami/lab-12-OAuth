@@ -2,9 +2,10 @@
 
 const superagent = require('superagent');
 const users = require('./users.js');
+require('dotenv').config();
 
-const tokenServerUrl = 'https://github.com/login/oauth/access_token';
-const remoteAPI = 'https://api.github.com/user';
+const tokenServerUrl = process.env.tokenServerUrl;
+const remoteAPI = process.env.remoteAPI;
 const CLIENT_ID = process.env.CLIENT_ID;
 const CLIENT_SECRET = process.env.CLIENT_SECRET;
 const API_SERVER = process.env.API_SERVER;
