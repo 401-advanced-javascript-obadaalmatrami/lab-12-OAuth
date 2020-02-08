@@ -4,8 +4,8 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "start": "node app.js",
-        "watch": "nodemon app.js"
+        "start": "node index.js",
+        "watch": "nodemon index.js"
     },
     "jest": {
         "testEnvironment": "node"
